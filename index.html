@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-left">
+          <div class="list-open">
+            <img src="./images/icon-menu.svg" alt="" />
+          </div>
+          <h1 class="logo">sneakers</h1>
+          <div class="overlay hide"></div>
+          <ul class="list">
+            <div class="close-list">
+              <img src="./images/icon-close.svg" alt="" />
+            </div>
+            <li>
+              <a href="">collections</a>
+            </li>
+            <li>
+              <a href="">men</a>
+            </li>
+            <li>
+              <a href="">women</a>
+            </li>
+            <li>
+              <a href="">about</a>
+            </li>
+            <li>
+              <a href="">contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="header-right">
+          <button class="cart">
+            <span class="cart-logo">
+              <img src="./images/icon-cart.svg" alt="cart" />
+            </span>
+            <div class="amount hide">
+            </div>
+          </button>
+          <section class="cart-container hide">
+            <div class="title">
+                <h3>Cart</h3>
+            </div>
+            <div class="content">
+              <h4 class="empthy-lable">Your Cart Is Empthy</h4>
+            </div>
+            <div class="checkout hide">
+            <button class="checkout-btn">
+              Checkout
+            </button>
+            </div>
+          </section>
+          <div class="profile">
+            <img src="./images/image-avatar.png" alt="profile pic" />
+          </div>
+        </div>
+      </header>
+      <main>
+        <articale class="product">
+          <div class="image-slider">
+            <div class="main-image">
+              <button class="prev"><img src="./images/icon-previous.svg" alt="" /></button>
+              <img class="preview-img" src="./images/image-product-1.jpg"/>
+              <button class="next"><img src="./images/icon-next.svg" alt="" /></button>
+            </div>
+              <div class="slider-bar">
+                <ul >
+                  <li class="thumbnail">
+                    <img class="select" id="1" src="./images/image-product-1-thumbnail.jpg" alt="" />
+                  </li> 
+                  <li class="thumbnail"> 
+                    <img id="2" src="./images/image-product-2-thumbnail.jpg" alt="" />
+                  </li> 
+                  <li class="thumbnail"> 
+                    <img id="3" src="./images/image-product-3-thumbnail.jpg" alt="" />
+                  </li> 
+                  <li class="thumbnail"> 
+                    <img id="4" src="./images/image-product-4-thumbnail.jpg" alt="" />
+                  </li>
+                </ul>
+              </div>
+          </div>
+          <div class="content-info">
+            <div class="title">
+              <h4>
+                SNEAKER COMPANY
+              </h4>
+              <h2>
+                fall limited edition sneakers
+              </h2>
+            </div>
+            <div class="desc">
+              <p>
+              These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they’ll withstand everything the weather can offer.
+              </p>
+            </div>
+            <div class="price-info">
+              <div class="price">
+              <h2 class="pr">
+                $125.00
+              </h2>
+              <h3 class="dc">
+                50%
+              </h3>
+              </div>
+              <h3 class="og-price">
+                $250.00
+              </h3>
+            </div>
+            <div class="btns">
+              <div class="order-count">
+                <button class="minus"><img src="./images/icon-minus.svg" alt="" /></button>
+                <input type="number" placeholder="0" min="0" max="99" name="order" id="order" />
+                <button class="plus"><img src="./images/icon-plus.svg" alt="" /></button>
+                
+              </div>
+              <button id="Add-to-cart" class="add-to-cart disable">
+                <img src="./images/icon-cart.svg" alt="" />
+                Add to cart
+              </button>
+            </div>
+          </div>
+        </articale>
+      </main>
+      <div class="slider-scaled hide">
+        <!-- <div class="slider-overlay"></div> -->
+        
+        <div class="center">
+          <div class="close">
+            <img src="./images//icon-close.svg" alt="">
+          </div>
+          <div class="holder">
+            <div class="main">
+              <button class="prevImg"><img src="images/icon-previous.svg" alt=""></button>
+              <img class="scaledImg" src="images/image-product-1.jpg" alt="">
+              <button class="nextImg"><img src="images/icon-next.svg" alt=""></button>
+            </div>
+            <div class="bar">
+              <ul >
+                <li class="scaled-thumbnail select">
+                  <img class="select" id="1" src="./images/image-product-1-thumbnail.jpg" alt="" />
+                </li> 
+                <li class="scaled-thumbnail"> 
+                  <img id="2" src="./images/image-product-2-thumbnail.jpg" alt="" />
+                </li> 
+                <li class="scaled-thumbnail"> 
+                  <img id="3" src="./images/image-product-3-thumbnail.jpg" alt="" />
+                </li> 
+                <li class="scaled-thumbnail"> 
+                  <img id="4" src="./images/image-product-4-thumbnail.jpg" alt="" />
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    <script src="main.js"></script>
+</body>
+</html>
